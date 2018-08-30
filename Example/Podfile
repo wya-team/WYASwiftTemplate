@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WYASwiftTemplate_Example' do
+  pod 'WYASwiftTemplate', :path => '../'
+
+  target 'WYASwiftTemplate_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
